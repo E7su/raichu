@@ -157,8 +157,8 @@ ${else}${cpu cpu0}${endif}${endif}%${alignr}${freq_g}
 ${hr}
 ${color}${alignc}T E M P E R A T U R E S
 ${hr}
-${execi 10 sensors | grep 'Core 0' | awk -F '(' '{print $1 }'}
-${execi 10 sensors | grep 'Core 1' | awk -F '(' '{print $1 }'}
+${alignc}${execi 10 sensors | grep 'Core 0' | awk -F '(' '{print $1 }'}
+${alignc}${execi 10 sensors | grep 'Core 1' | awk -F '(' '{print $1 }'}
 ${hr}
 ${alignc}H I G H E S T   M E M
 ${hr}
